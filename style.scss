@@ -1,0 +1,153 @@
+html, body {max-width: 100%;}
+
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  }
+
+  header{
+    background-color: black;
+
+
+    nav a{
+      color: white;
+      text-decoration: none;
+      display: block;
+      border-bottom: 2px solid white;
+      text-align: center;
+      padding: 5px;
+      font-size: 50px;
+    }
+  }
+
+  aside{
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 2px;
+    text-align: center;
+    font-size: 30px;
+    h3{
+      font-size: 50px;
+    }
+    img{
+      -webkit-transform: scale(0.5); /* Saf3.1+, Chrome */
+      -moz-transform: scale(0.5); /* FF3.5+ */
+      -ms-transform: scale(0.5); /* IE9 */
+      -o-transform: scale(0.5); /* Opera 10.5+ */
+        transform: scale(0.5);
+      border: 5px solid white;
+      border-radius: 8px;
+    }
+  }
+
+  main{
+    background-color: black;
+    color: white;
+    margin-top: 0;
+    border-radius: 8px;
+    h1{
+      text-align: center;
+      font-size: 50px;
+    }
+  }
+
+  section{
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  main{
+      .projectname{
+        margin-left:30%;
+        text-decoration: none;
+        color: white;
+        margin-bottom: 10px;
+        font-size: 40px;
+        border: 2px solid white;
+        border-radius: 8px;
+      }
+      img{
+        border: 2px solid black;
+        margin-top: 20px;
+        width: 100%;
+
+      }
+
+  }
+
+  @media all and (min-width: 766px){
+      *, *:before, *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        }
+      body{
+        width: 100%;
+      }
+
+      header{
+        padding: 15px;
+        nav a{
+          display: inline;
+          border-bottom: none;
+          font-size: 30px;
+          margin: 15px;
+          border: 2px solid white;
+          border-radius: 8px;
+        }
+      }
+      aside{
+        margin-top: 20px;
+        width: 30%;
+        display: block;
+        float: left;
+        img{
+          display: block;
+          -webkit-transform: scale(0.5); /* Saf3.1+, Chrome */
+          -moz-transform: scale(0.5); /* FF3.5+ */
+          -ms-transform: scale(0.5); /* IE9 */
+          -o-transform: scale(0.5); /* Opera 10.5+ */
+            transform: scale(0.5);
+        }
+      }
+      main{
+        margin-top: 20px;
+        float: right;
+        width: 70%;
+        border-left: 5px solid white;
+        h1{
+          font-size: 30px;
+        }
+        section{
+          margin: 0 auto;
+        }
+        .project{
+          margin-bottom: 20px;
+          border: 2px solid white;
+          border-radius: 8px;
+          width: 70%;
+          height: 40%;
+          .projectname{
+            text-align: center;
+            margin-left: 30px;
+          }
+          a{
+            font-size: 20px;
+            display: block;
+            width: 90%;
+            img{
+              margin-left: 100px;
+              margin-bottom: 20px;
+              height: 68%;
+              width: 68%;
+            };
+          }
+        }
+      }
+
+
+    }
